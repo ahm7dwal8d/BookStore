@@ -1,0 +1,14 @@
+.authors .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+.authors .item {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 4px;
+    height: 100%; 
+}
+.authors img {
+    width: 100%;
+}

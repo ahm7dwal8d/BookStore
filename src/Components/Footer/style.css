@@ -1,0 +1,70 @@
+.footer {
+    background-color: #3f51b5;
+    color: #fff;
+    text-transform: capitalize;
+}
+.footer .media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 13px 0;
+}
+.footer .media .media-icon {
+    display: flex;
+}
+.footer .media .media-icon div {
+        background: #fff;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.footer .media .media-icon div svg {
+    color: #000;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px;
+}
+.footer .container h5 {
+    font-size: 17px;
+    position: relative;
+    margin: 20px 0 40px;
+}
+.footer .container h5::After {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 180px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+}
+.footer .container h5::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    left: 0;
+}
+.footer .container a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+.footer .container ul {
+    list-style: none;
+}
+.footer .container ul li {
+    padding: 10px 0;
+}
+.footer .container ul li svg {
+    margin: 0 5px 0
+}

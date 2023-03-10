@@ -1,0 +1,111 @@
+.books-gift {
+    padding: 15px 0;
+}
+.books-gift .head {
+    color: #3f51b5;
+    margin: 0 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    font-size: 20px
+}
+.books-gift .head::After {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 110px;
+    height: 2px;
+    background-color: #3f51b5;
+}
+.books-gift .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.books-gift .slider-wrapper {
+    display: flex;
+    transition: all 1.2s ease;  
+}
+.books-gift .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    z-index: 99999
+}
+.books-gift .btn div {
+    position: absolute;
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.books-gift .btn .right {
+    left: 20px;
+}
+.books-gift .btn .left {
+    right: 20px;
+}
+.books-gift .slide {
+    border: 1px solid #000;
+    margin: 0 10px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100vw;
+}
+.books-gift .slide img {
+    width: 200px
+}
+@media (max-width: 767px) {
+    .books-gift .slide img {
+        width: 150px
+    }
+}
+.books-gift .slide .book-head {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #3f51b5;
+}
+.books-gift .slide .book-price {
+    text-transform: capitalize;
+}
+.books-gift .slide .book-price span {
+    font-weight: bold;
+}
+.books-gift .slide .operation {
+    display: flex;
+}
+.books-gift .slide .operation .book-prevew {
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #ff5722;
+    color: #fff;
+    padding: 5px;
+    display: block;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.books-gift .slide .operation .add-to-cart {
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #e91e63;
+    color: #fff;
+    padding: 6px;
+    display: block;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border-color: #e91e63;
+    cursor: pointer
+}
